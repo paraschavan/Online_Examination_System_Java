@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Log in</title>
+<link rel="stylesheet" href="./css/tailwind.min.css">
+<link rel="icon" href="img/logo.png" type="image/icon type">
+</head>
+<!-- <body style="
+background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+"class="bg-gray-600"> -->
+<body class="xl:bg-red-500 lg:bg-green-500 md:bg-purple-500 sm:bg-blue-500 bg-gray-200">
+<div class="flex  items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-full">
+    <div>
+      <img class="mx-auto h-auto w-auto" src="img/logo.png" alt="Workflow" style="width: 50%;display: block;margin-left: auto;margin-right: auto;top: 0%;border-radius: 50%;margin: 0 auto;box-shadow: 1px 1px 2px rgba(0,0,0,0.1);"/>
+      <h2 class="mt-6 text-center text-4xl xl:text-5xl lg:text-5xl md:text-5xl sm:text-5xl leading-9 font-extrabold text-gray-900">
+        Sign in to your accountd
+      </h2>
+    </div>
+    <form class="mt-8" action="UserServlet" method="POST" autocomplete="off">
+    <input type="hidden" name="action" value="login">
+      <div class="rounded-md shadow-sm">
+        <div>
+          <input aria-label="User ID" name="uname" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-900 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-2xl sm:leading-5" placeholder="User ID" />
+        </div>
+        <div class="-mt-px">
+          <input aria-label="Password" name="pass" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-900 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-2xl sm:leading-5" placeholder="Password" />
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <button type="submit" class="text-3xl  group relative w-full flex justify-center py-5 px-5 border border-transparent leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-1">
+            <svg class="h-6 w-6 text-indigo-500 group-hover:text-indigo-400 transition ease-in-out duration-150" fill="currentColor" viewBox="5 2 10 16">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          Sign in
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
